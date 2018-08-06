@@ -1,0 +1,54 @@
+<label for="ch">
+  <img src="Untitled.png" alt="">
+</label>
+
+<input type="checkbox" id="ch">
+
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href="">About</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="">Privacy</a></li>
+  <li><a href="">Sitemap</a></li>
+  <li><a href="">Terms</a></li>
+</ul>
+
+
+<style>
+  input,label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  @media (max-width:600px) {
+    ul {
+      flex-direction: column;
+      display: none;
+    }
+
+    label {
+      display: block;
+      width: 100%;
+      background: #eee;
+    }
+
+    label:hover {
+      cursor: pointer;
+    }
+
+    input:checked + ul {
+      display: inline;
+    }
+  }
+
+</style>
